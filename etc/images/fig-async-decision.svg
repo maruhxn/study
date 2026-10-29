@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" width="780" height="470" role="img" aria-label="비동기 처리 방식을 고르는 순서">
+<style>
+  svg { font-family: system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+  .surface { fill: #fcfcfb; }
+  .ink { fill: #0b0b0b; } .ink2 { fill: #52514e; } .muted { fill: #898781; }
+  .q { fill: #eaf2fc; stroke: #2a78d6; stroke-width: 1.5; }
+  .sync { fill: #f1f0ec; stroke: #c3c2b7; stroke-width: 1.5; }
+  .async { fill: #e6f6ef; stroke: #1baf7a; stroke-width: 1.5; }
+  .common { fill: #fdf4dc; stroke: #eda100; stroke-width: 1.5; }
+  .edge { stroke: #898781; stroke-width: 1.5; fill: none; }
+  .head { fill: #898781; }
+  .t12 { font-size: 12px; } .t13 { font-size: 13px; } .t14 { font-size: 14px; font-weight: 600; } .t16 { font-size: 16px; font-weight: 600; }
+  @media (prefers-color-scheme: dark) {
+    .surface { fill: #1a1a19; }
+    .ink { fill: #f0efec; } .ink2 { fill: #c3c2b7; } .muted { fill: #898781; }
+    .q { fill: #1c2a3b; stroke: #3987e5; }
+    .sync { fill: #2a2a28; stroke: #55544f; }
+    .async { fill: #17302a; stroke: #199e70; }
+    .common { fill: #33290f; stroke: #c98500; }
+  }
+</style>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path class="head" d="M0,0 L10,5 L0,10 z"/>
+  </marker>
+</defs>
+<rect class="surface" x="0" y="0" width="780" height="470" rx="8"/>
+<text class="ink t16" x="20" y="32">비동기 처리 방식 고르기</text>
+
+<!-- 질문 -->
+<rect class="q" x="20" y="50" width="230" height="48" rx="6"/>
+<text class="ink t13" x="135" y="72" text-anchor="middle">결과가 이 HTTP 응답을</text>
+<text class="ink t13" x="135" y="89" text-anchor="middle">만들기 전에 필요한가?</text>
+
+<rect class="q" x="20" y="118" width="230" height="48" rx="6"/>
+<text class="ink t13" x="135" y="147" text-anchor="middle">유실돼도 되는가?</text>
+
+<rect class="q" x="20" y="186" width="230" height="48" rx="6"/>
+<text class="ink t13" x="135" y="208" text-anchor="middle">시차가 원래 크게 허용되는</text>
+<text class="ink t13" x="135" y="225" text-anchor="middle">대량 데이터인가?</text>
+
+<rect class="q" x="20" y="254" width="230" height="48" rx="6"/>
+<text class="ink t13" x="135" y="276" text-anchor="middle">모든 쓰기 경로에</text>
+<text class="ink t13" x="135" y="293" text-anchor="middle">연동 코드를 넣을 수 있나?</text>
+
+<!-- 아니오: 아래 질문으로 -->
+<path class="edge" d="M135,98 V116" marker-end="url(#arrow)"/>
+<text class="muted t12" x="143" y="112">아니오</text>
+<path class="edge" d="M135,166 V184" marker-end="url(#arrow)"/>
+<text class="muted t12" x="143" y="180">아니오</text>
+<path class="edge" d="M135,234 V252" marker-end="url(#arrow)"/>
+<text class="muted t12" x="143" y="248">아니오</text>
+<path class="edge" d="M135,302 V346 H318" marker-end="url(#arrow)"/>
+<text class="muted t12" x="143" y="330">아니오</text>
+
+<!-- 예: 오른쪽 결과로 -->
+<path class="edge" d="M250,74 H318" marker-end="url(#arrow)"/>
+<text class="muted t12" x="276" y="68">예</text>
+<path class="edge" d="M250,142 H318" marker-end="url(#arrow)"/>
+<text class="muted t12" x="276" y="136">예</text>
+<path class="edge" d="M250,210 H318" marker-end="url(#arrow)"/>
+<text class="muted t12" x="276" y="204">예</text>
+<path class="edge" d="M250,278 H318" marker-end="url(#arrow)"/>
+<text class="muted t12" x="276" y="272">예</text>
+
+<!-- 결과 -->
+<rect class="sync" x="320" y="50" width="250" height="48" rx="6"/>
+<text class="ink t14" x="336" y="70">동기 호출</text>
+<text class="ink2 t12" x="336" y="88">타임아웃 · 재시도 · 멱등키</text>
+
+<rect class="async" x="320" y="118" width="250" height="48" rx="6"/>
+<text class="ink t14" x="336" y="138">별도 스레드</text>
+<text class="ink2 t12" x="336" y="156">AFTER_COMMIT · 큐 상한</text>
+
+<rect class="async" x="320" y="186" width="250" height="48" rx="6"/>
+<text class="ink t14" x="336" y="206">배치</text>
+<text class="ink2 t12" x="336" y="224">원본이 DB에 그대로, 지연 = 주기</text>
+
+<rect class="async" x="320" y="254" width="250" height="48" rx="6"/>
+<text class="ink t14" x="336" y="274">Outbox + 브로커</text>
+<text class="ink2 t12" x="336" y="292">릴레이는 폴링 또는 CDC</text>
+
+<rect class="async" x="320" y="322" width="250" height="48" rx="6"/>
+<text class="ink t14" x="336" y="342">업무 테이블 CDC</text>
+<text class="ink2 t12" x="336" y="360">행 변경 ≠ 업무 이벤트</text>
+
+<!-- 오른쪽: 경향 -->
+<path class="edge" d="M600,122 V366" marker-end="url(#arrow)"/>
+<text class="ink2 t13" x="616" y="226">아래로 갈수록</text>
+<text class="ink2 t13" x="616" y="246">유실에 강해지고</text>
+<text class="ink2 t13" x="616" y="266">운영 부담이 커진다</text>
+
+<!-- 공통 -->
+<rect class="common" x="20" y="394" width="740" height="56" rx="6"/>
+<text class="ink t14" x="36" y="416">비동기 쪽을 골랐다면 어느 길이든 따라오는 것</text>
+<text class="ink2 t12" x="36" y="436">결과 전달(상태 리소스 + 202 폴링 · 웹훅 · 푸시) · 멱등 소비자 · 대사</text>
+</svg>
