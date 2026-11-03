@@ -1,4 +1,4 @@
-관련 개념: [[임베딩]], [[Elasticsearch 벡터 검색]].
+관련 개념: [[01 임베딩]], [[01 Elasticsearch 벡터 검색]].
 
 하이브리드 검색 = ==**키워드 검색 결과 + 벡터 검색 결과를 합쳐 최종 순위를 만드는 방식**==.
 
@@ -8,7 +8,7 @@
 
 ## 1. 수행 과정: 각각 검색 → 결과 합치기
 
-문서의 **원문과 임베딩 벡터가 미리 저장**되어 있다고 가정. [[Elasticsearch 벡터 검색#1. 문서를 벡터로 저장하기|벡터 저장 예제]]의 `title`, `embedding` 필드 사용.
+문서의 **원문과 임베딩 벡터가 미리 저장**되어 있다고 가정. [[01 Elasticsearch 벡터 검색#1. 문서를 벡터로 저장하기|벡터 저장 예제]]의 `title`, `embedding` 필드 사용.
 
 ```mermaid
 flowchart TD
@@ -103,7 +103,7 @@ rank_constant = 60일 때:
 
 ## 3. Elasticsearch에서 RRF로 검색하기
 
-**Elasticsearch 8.19 기준**. [[Elasticsearch 벡터 검색#1. 문서를 벡터로 저장하기|매핑·문서 저장 예제]]로 만든 `vector-products` 사용.
+**Elasticsearch 8.19 기준**. [[01 Elasticsearch 벡터 검색#1. 문서를 벡터로 저장하기|매핑·문서 저장 예제]]로 만든 `vector-products` 사용.
 검색어 `"게임용 랩탑"`의 임베딩이 `[0.45, -0.23, 0.67]`이라고 가정.
 
 ==**retriever** = 검색 결과를 가져오는 설정==. 아래 요청에서 `standard`는 키워드 검색, `knn`은 벡터 검색, `rrf`는 두 결과 결합 역할.
