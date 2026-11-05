@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 190" width="880" height="190" role="img" aria-label="실패한 메시지는 지수 백오프와 지터로 재시도하고, 한도를 넘으면 DLQ로 옮겨 알람을 건다"><style>
+svg { font-family: system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.surface { fill: #fcfcfb; }
+.ink { fill: #0b0b0b; } .ink2 { fill: #52514e; } .muted { fill: #898781; }
+.bgN { fill: #f1f0eb; } .stN { stroke: #c3c2b7; }
+.bgB { fill: #e8f1fc; } .stB { stroke: #2a78d6; } .txB { fill: #1d5fb0; }
+.bgR { fill: #fbeaea; } .stR { stroke: #d03b3b; } .txR { fill: #b02a2a; }
+.bgG { fill: #e4f6ed; } .stG { stroke: #1baf7a; } .txG { fill: #12785a; }
+.bgA { fill: #fcf3dc; } .stA { stroke: #eda100; } .txA { fill: #8a5d00; }
+.solR { fill: #d03b3b; } .solG { fill: #1baf7a; } .solA { fill: #eda100; } .solB { fill: #2a78d6; } .solI { fill: #52514e; }
+.wh { fill: #ffffff; }
+.lnI { stroke: #52514e; fill: none; } .lnR { stroke: #d03b3b; fill: none; } .lnG { stroke: #1baf7a; fill: none; }
+.lnA { stroke: #eda100; fill: none; } .lnB { stroke: #2a78d6; fill: none; } .lnN { stroke: #c3c2b7; fill: none; }
+.lnW { stroke: #ffffff; fill: none; }
+.mkI { fill: #52514e; } .mkR { fill: #d03b3b; } .mkG { fill: #1baf7a; } .mkA { fill: #eda100; } .mkB { fill: #2a78d6; }
+@media (prefers-color-scheme: dark) {
+  .surface { fill: #1a1a19; }
+  .ink { fill: #f0efec; } .ink2 { fill: #c3c2b7; } .muted { fill: #9a9993; }
+  .bgN { fill: #242422; } .stN { stroke: #55544f; }
+  .bgB { fill: #1b2b40; } .stB { stroke: #3987e5; } .txB { fill: #7db3f2; }
+  .bgR { fill: #3a2020; } .stR { stroke: #e05a5a; } .txR { fill: #f08a8a; }
+  .bgG { fill: #1b3328; } .stG { stroke: #199e70; } .txG { fill: #5fd1a6; }
+  .bgA { fill: #3a2f14; } .stA { stroke: #c98500; } .txA { fill: #e8b64a; }
+  .solR { fill: #e05a5a; } .solG { fill: #199e70; } .solA { fill: #c98500; } .solB { fill: #3987e5; } .solI { fill: #c3c2b7; }
+  .lnI { stroke: #c3c2b7; } .lnR { stroke: #e05a5a; } .lnG { stroke: #199e70; } .lnA { stroke: #c98500; } .lnB { stroke: #3987e5; } .lnN { stroke: #55544f; }
+  .mkI { fill: #c3c2b7; } .mkR { fill: #e05a5a; } .mkG { fill: #199e70; } .mkA { fill: #c98500; } .mkB { fill: #3987e5; }
+}
+</style><defs><marker id="mI" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkI"/></marker><marker id="mR" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkR"/></marker><marker id="mG" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkG"/></marker><marker id="mA" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkA"/></marker><marker id="mB" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkB"/></marker></defs><rect class="surface" x="0" y="0" width="880" height="190" rx="8"/><text x="24.0" y="32.0" class="ink" font-size="16" text-anchor="start" font-weight="600">재시도는 간격을 늘려 가며, 한도를 넘으면 DLQ로</text><rect x="24" y="92" width="100" height="52" rx="8" class="bgN stN" stroke-width="1.5"/><text x="74.0" y="122.3" class="ink" font-size="12" text-anchor="middle" font-weight="600">메시지</text><line x1="124" y1="118" x2="160" y2="118" class="lnI" stroke-width="1.6" marker-end="url(#mI)"/><rect x="162" y="92" width="130" height="52" rx="8" class="bgN stN" stroke-width="1.5"/><text x="227.0" y="122.3" class="ink" font-size="12" text-anchor="middle" font-weight="600">처리</text><line x1="292" y1="118" x2="340" y2="118" class="lnR" stroke-width="1.6" marker-end="url(#mR)"/><text x="316.0" y="110.0" class="txR" font-size="11" text-anchor="middle" font-weight="700">실패</text><rect x="342" y="92" width="230" height="52" rx="8" class="bgA stA" stroke-width="1.5"/><text x="457.0" y="113.3" class="ink" font-size="12" text-anchor="middle" font-weight="600">재시도</text><text x="457.0" y="131.0" class="ink2" font-size="11" text-anchor="middle">1초 · 2초 · 4초 … 상한 + 지터</text><path d="M456,92 L456,74 L226,74 L226,90" class="lnA" stroke-width="1.6" marker-end="url(#mA)"/><text x="341.0" y="68.0" class="txA" font-size="11" text-anchor="middle" font-weight="700">멱등할 때만 다시 처리</text><line x1="572" y1="118" x2="620" y2="118" class="lnR" stroke-width="1.6" marker-end="url(#mR)"/><text x="596.0" y="110.0" class="txR" font-size="11" text-anchor="middle" font-weight="700">한도 초과</text><rect x="622" y="92" width="100" height="52" rx="8" class="bgR stR" stroke-width="1.5"/><text x="672.0" y="122.3" class="ink" font-size="12" text-anchor="middle" font-weight="600">DLQ</text><line x1="722" y1="118" x2="744" y2="118" class="lnR" stroke-width="1.6" marker-end="url(#mR)"/><rect x="746" y="92" width="110" height="52" rx="8" class="bgR stR" stroke-width="1.5"/><text x="801.0" y="113.3" class="ink" font-size="12" text-anchor="middle" font-weight="600">알람</text><text x="801.0" y="131.0" class="ink2" font-size="11" text-anchor="middle">1건만 와도</text><text x="24.0" y="172.0" class="ink2" font-size="12" text-anchor="start">DLQ는 독 메시지를 치워 두는 곳이다. DB Task Queue라면 FAILED 상태가 같은 역할을 한다.</text></svg>
