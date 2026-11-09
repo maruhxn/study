@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" width="880" height="300" role="img" aria-label="서명 요청 24시간 뒤부터 차단이 즉시 적용되고, 정리는 다음 04시 배치가 하므로 최대 하루 서명 대기 상태가 남는 타임라인"><style>
+svg { font-family: system-ui, -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.surface { fill: #fcfcfb; }
+.ink { fill: #0b0b0b; } .ink2 { fill: #52514e; } .muted { fill: #898781; }
+.bgN { fill: #f1f0eb; } .stN { stroke: #c3c2b7; }
+.bgB { fill: #e8f1fc; } .stB { stroke: #2a78d6; } .txB { fill: #1d5fb0; }
+.bgR { fill: #fbeaea; } .stR { stroke: #d03b3b; } .txR { fill: #b02a2a; }
+.bgG { fill: #e4f6ed; } .stG { stroke: #1baf7a; } .txG { fill: #12785a; }
+.bgA { fill: #fcf3dc; } .stA { stroke: #eda100; } .txA { fill: #8a5d00; }
+.solR { fill: #d03b3b; } .solG { fill: #1baf7a; } .solA { fill: #eda100; } .solB { fill: #2a78d6; } .solI { fill: #52514e; }
+.wh { fill: #ffffff; }
+.lnI { stroke: #52514e; fill: none; } .lnR { stroke: #d03b3b; fill: none; } .lnG { stroke: #1baf7a; fill: none; }
+.lnA { stroke: #eda100; fill: none; } .lnB { stroke: #2a78d6; fill: none; } .lnN { stroke: #c3c2b7; fill: none; }
+.mkI { fill: #52514e; } .mkR { fill: #d03b3b; } .mkG { fill: #1baf7a; } .mkA { fill: #eda100; } .mkB { fill: #2a78d6; }
+@media (prefers-color-scheme: dark) {
+  .surface { fill: #1a1a19; }
+  .ink { fill: #f0efec; } .ink2 { fill: #c3c2b7; } .muted { fill: #9a9993; }
+  .bgN { fill: #242422; } .stN { stroke: #55544f; }
+  .bgB { fill: #1b2b40; } .stB { stroke: #3987e5; } .txB { fill: #7db3f2; }
+  .bgR { fill: #3a2020; } .stR { stroke: #e05a5a; } .txR { fill: #f08a8a; }
+  .bgG { fill: #1b3328; } .stG { stroke: #199e70; } .txG { fill: #5fd1a6; }
+  .bgA { fill: #3a2f14; } .stA { stroke: #c98500; } .txA { fill: #e8b64a; }
+  .solR { fill: #e05a5a; } .solG { fill: #199e70; } .solA { fill: #c98500; } .solB { fill: #3987e5; } .solI { fill: #c3c2b7; }
+  .lnI { stroke: #c3c2b7; } .lnR { stroke: #e05a5a; } .lnG { stroke: #199e70; } .lnA { stroke: #c98500; } .lnB { stroke: #3987e5; } .lnN { stroke: #55544f; }
+  .mkI { fill: #c3c2b7; } .mkR { fill: #e05a5a; } .mkG { fill: #199e70; } .mkA { fill: #c98500; } .mkB { fill: #3987e5; }
+}
+</style><defs><marker id="mI" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkI"/></marker><marker id="mR" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkR"/></marker><marker id="mG" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkG"/></marker><marker id="mA" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkA"/></marker><marker id="mB" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mkB"/></marker></defs><rect class="surface" x="0" y="0" width="880" height="300" rx="8"/><text x="24" y="32" class="ink" font-size="16" text-anchor="start" font-weight="600">차단은 기한에, 정리는 다음 배치에</text><line x1="40" y1="120" x2="856" y2="120" class="lnN" stroke-width="2"/><rect x="400" y="112" width="330" height="16" class="bgA"/><circle cx="90" cy="120" r="5" class="solI"/><circle cx="400" cy="120" r="5" class="solR"/><circle cx="730" cy="120" r="5" class="solG"/><text x="90" y="100" class="ink" font-size="12" text-anchor="middle" font-weight="600">서명 요청</text><text x="400" y="100" class="txR" font-size="12" text-anchor="middle" font-weight="600">24시간</text><text x="730" y="100" class="txG" font-size="12" text-anchor="middle" font-weight="600">다음 04시 배치</text><text x="400" y="150" class="txR" font-size="12" text-anchor="middle">차단: 이후 서명 완료는 거절</text><text x="565" y="176" class="txA" font-size="12" text-anchor="middle">최대 하루 서명 대기로 남음</text><text x="730" y="150" class="txG" font-size="12" text-anchor="middle">정리: 만료, 링크 닫기</text><rect x="24" y="214" width="832" height="60" rx="8" class="bgN stN" stroke-width="1.5"/><text x="440.0" y="237.0" class="ink" font-size="12" text-anchor="middle">차단이 기한에 걸려 있어, 정리가 하루 늦어도 우리 DB에 기한 뒤 서명이 등록되지 않는다</text><text x="440.0" y="255.0" class="ink" font-size="12" text-anchor="middle">그래서 예약 인프라 없이 하루 한 번 배치로 충분했다</text></svg>
